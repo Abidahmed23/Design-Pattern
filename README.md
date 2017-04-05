@@ -13,13 +13,6 @@ This mechanism makes exchanging product families easy because the specific class
 
 Because the service provided by the factory object is so pervasive, it is routinely implemented as a Singleton.
 
-### Structure :
-
-The Abstract Factory defines a Factory Method per product. Each Factory Method encapsulates the new operator and the concrete, platform-specific, product classes. Each "platform" is then modeled with a Factory derived class.
-
-Scheme of Abstract Factory
-
-![abstractfactory_pattern_uml_diagram](https://cloud.githubusercontent.com/assets/25761905/24097390/cb51b0ca-0d8f-11e7-800a-c1a33adc08c6.jpg)
 
 ### Code Examples :
 
@@ -48,13 +41,6 @@ The component designer mandates the required steps of an algorithm, and the orde
 
 Template Method is used prominently in frameworks. Each framework implements the invariant pieces of a domain's architecture, and defines "placeholders" for all necessary or interesting client customization options. In so doing, the framework becomes the "center of the universe", and the client customizations are simply "the third rock from the sun". This inverted control structure has been affectionately labelled "the Hollywood principle" - "don't call us, we'll call you".
 
-### Structure :
-
-![11](https://cloud.githubusercontent.com/assets/25761905/24097839/d5fa88ce-0d91-11e7-90cf-8a586294b475.png)
-
-The implementation of template_method() is: call step_one(), call step_two(), and call  step_three().  step_two() is a "hook" method – a placeholder. It is declared in the base class, and then defined in derived classes. Frameworks (large scale reuse infrastructures) use Template Method a lot. All reusable code is defined in the framework's base classes, and then clients of the framework are free to define customizations by creating derived classes as needed.
-
-![22](https://cloud.githubusercontent.com/assets/25761905/24097862/f056969a-0d91-11e7-9058-a748d24b4856.png)
 
 ### Code Examples :
 
